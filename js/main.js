@@ -1,27 +1,3 @@
-const searchEl = document.querySelector('.search')
-const searchInputEl = searchEl.querySelector('input')
-
-searchEl.addEventListener('click', function () {
-  searchInputEl.focus()
-})
-
-searchInputEl.addEventListener('focus', function() {
-  searchEl.classList.add('focused')
-  searchInputEl.setAttribute('placeholder','검색어 입력')
-})
-searchInputEl.addEventListener('blur', function() {
-  searchEl.classList.remove('focused')
-  searchInputEl.setAttribute('placeholder','')
-})
-
-toTop.addEventListener('click', function(){
-  gsap.to(window, .7, {
-    scrollTo: 0
-  })
-})
-
-
-
 new Swiper('.news-slides .swiper', {
   slidesPerView: 3, //한번에 보여줄 슬라이드 개수
   spaceBetween: 10, //슬라이드 사이 여백
